@@ -14,7 +14,7 @@ func (cc *CryptoCompare) Run(h *bridges.Helper) (interface{}, error) {
 	r := make(map[string]interface{})
 	err := h.HTTPCall(
 		http.MethodGet,
-		"https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=USD,JPY,EUR",
+		"https://fourswords.io/wp-json/wc/v3/orders/?consumer_key=ck_ff6333b7ecd26852dd731e93c26cef6bebacba3f&consumer_secret=cs_e63182db4325259be0b5e22de81b5a42a4227482",
 		&r,
 	)
 	return r, err
